@@ -42,6 +42,33 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- ********** Dependencias de Swagger ********** -->
+		<!-- springfox-swagger2, es la más importante, pues es que se encarga
+			 de analizar la estructura de nuestro proyecto y crear los metadatos
+			 para crear la auto documentación del API -->
+		<!-- Esta depenencia del tutorial, para la versión de spring boot que uso causa error -->
+		<!--
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		-->
+		<!-- Reemplazando por esta nueva dependencia (También lo tengo en el proyecto de Luigi Code) -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<!-- springfox-swagger-ui, es que se encarga de tomar los metadatos de la primera
+		y crear una interfaz gráfica amigable con los usuarios. -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
